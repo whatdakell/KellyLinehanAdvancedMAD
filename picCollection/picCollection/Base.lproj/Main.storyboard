@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fV7-8S-Y7z">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection Collection View Controller-->
+        <scene sceneID="lcS-BK-aDD">
+            <objects>
+                <collectionViewController id="fV7-8S-Y7z" customClass="CollectionCollectionViewController" customModule="picCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pPv-T5-w60">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pa9-kH-aNC">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="r7k-gx-Tcr" customClass="CollectionViewCell" customModule="picCollection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="104" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="duD-nr-zP6">
+                                            <rect key="frame" x="2" y="2" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="duD-nr-zP6" secondAttribute="trailing" constant="2" id="YYB-ja-J39"/>
+                                    <constraint firstItem="duD-nr-zP6" firstAttribute="leading" secondItem="r7k-gx-Tcr" secondAttribute="leading" constant="2" id="fg8-Cy-meJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="duD-nr-zP6" secondAttribute="bottom" constant="2" id="lfg-fF-KDZ"/>
+                                    <constraint firstItem="duD-nr-zP6" firstAttribute="top" secondItem="r7k-gx-Tcr" secondAttribute="top" constant="2" id="wWa-cL-MoK"/>
+                                </constraints>
+                                <size key="customSize" width="104" height="104"/>
+                                <connections>
+                                    <outlet property="imageView" destination="duD-nr-zP6" id="YvG-Sw-SGl"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="an3-pg-O8U" customClass="CollectionSupplementaryView" customModule="picCollection" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfn-wg-GJc">
+                                    <rect key="frame" x="8" y="8" width="102" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="102" id="1zz-qm-3Mf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="mfn-wg-GJc" firstAttribute="leading" secondItem="an3-pg-O8U" secondAttribute="leadingMargin" id="23c-fp-C4t"/>
+                                <constraint firstItem="mfn-wg-GJc" firstAttribute="top" secondItem="an3-pg-O8U" secondAttribute="topMargin" id="Skc-Ap-ln4"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="mfn-wg-GJc" secondAttribute="bottom" constant="-2" id="gxj-G2-Bud"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="headerLabel" destination="mfn-wg-GJc" id="yeB-p5-2nv"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="fV7-8S-Y7z" id="y6x-Kw-pu8"/>
+                            <outlet property="delegate" destination="fV7-8S-Y7z" id="H69-S7-XzQ"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwb-gE-9LS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="392"/>
+        </scene>
+    </scenes>
+</document>

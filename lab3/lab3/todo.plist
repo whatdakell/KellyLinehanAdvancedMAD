@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Groceries</key>
+	<array>
+		<string>Milk</string>
+		<string>Bread</string>
+	</array>
+	<key>Toilettes</key>
+	<array>
+		<string>Makeup Remover</string>
+		<string>Shampoo</string>
+	</array>
+	<key>House Items</key>
+	<array>
+		<string>Toilet Paper</string>
+		<string>Paper Towls</string>
+	</array>
+	<key>Clothes</key>
+	<array>
+		<string>Socks</string>
+		<string>Blue Jeans</string>
+	</array>
+	
+
+</dict>
+</plist>

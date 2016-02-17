@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC2731461C6CF518005F6EDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2731451C6CF518005F6EDE /* AppDelegate.swift */; };
+		BC2731481C6CF518005F6EDE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2731471C6CF518005F6EDE /* MasterViewController.swift */; };
+		BC27314A1C6CF518005F6EDE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2731491C6CF518005F6EDE /* DetailViewController.swift */; };
+		BC27314D1C6CF518005F6EDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC27314B1C6CF518005F6EDE /* Main.storyboard */; };
+		BC27314F1C6CF518005F6EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC27314E1C6CF518005F6EDE /* Assets.xcassets */; };
+		BC2731521C6CF518005F6EDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2731501C6CF518005F6EDE /* LaunchScreen.storyboard */; };
+		BC27315D1C6CF518005F6EDE /* arryPotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC27315C1C6CF518005F6EDE /* arryPotterTests.swift */; };
+		BC2731681C6CF518005F6EDE /* arryPotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2731671C6CF518005F6EDE /* arryPotterUITests.swift */; };
+		BC2731761C6CF51F005F6EDE /* harrypotter.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC2731751C6CF51F005F6EDE /* harrypotter.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC2731591C6CF518005F6EDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC27313A1C6CF518005F6EDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC2731411C6CF518005F6EDE;
+			remoteInfo = arryPotter;
+		};
+		BC2731641C6CF518005F6EDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC27313A1C6CF518005F6EDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC2731411C6CF518005F6EDE;
+			remoteInfo = arryPotter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC2731421C6CF518005F6EDE /* arryPotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arryPotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2731451C6CF518005F6EDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC2731471C6CF518005F6EDE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		BC2731491C6CF518005F6EDE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BC27314C1C6CF518005F6EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC27314E1C6CF518005F6EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC2731511C6CF518005F6EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC2731531C6CF518005F6EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2731581C6CF518005F6EDE /* arryPotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arryPotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC27315C1C6CF518005F6EDE /* arryPotterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arryPotterTests.swift; sourceTree = "<group>"; };
+		BC27315E1C6CF518005F6EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2731631C6CF518005F6EDE /* arryPotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arryPotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2731671C6CF518005F6EDE /* arryPotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arryPotterUITests.swift; sourceTree = "<group>"; };
+		BC2731691C6CF518005F6EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2731751C6CF51F005F6EDE /* harrypotter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = harrypotter.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC27313F1C6CF518005F6EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2731551C6CF518005F6EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2731601C6CF518005F6EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC2731391C6CF518005F6EDE = {
+			isa = PBXGroup;
+			children = (
+				BC2731441C6CF518005F6EDE /* arryPotter */,
+				BC27315B1C6CF518005F6EDE /* arryPotterTests */,
+				BC2731661C6CF518005F6EDE /* arryPotterUITests */,
+				BC2731431C6CF518005F6EDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC2731431C6CF518005F6EDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC2731421C6CF518005F6EDE /* arryPotter.app */,
+				BC2731581C6CF518005F6EDE /* arryPotterTests.xctest */,
+				BC2731631C6CF518005F6EDE /* arryPotterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC2731441C6CF518005F6EDE /* arryPotter */ = {
+			isa = PBXGroup;
+			children = (
+				BC2731451C6CF518005F6EDE /* AppDelegate.swift */,
+				BC2731471C6CF518005F6EDE /* MasterViewController.swift */,
+				BC2731491C6CF518005F6EDE /* DetailViewController.swift */,
+				BC27314B1C6CF518005F6EDE /* Main.storyboard */,
+				BC27314E1C6CF518005F6EDE /* Assets.xcassets */,
+				BC2731501C6CF518005F6EDE /* LaunchScreen.storyboard */,
+				BC2731751C6CF51F005F6EDE /* harrypotter.plist */,
+				BC2731531C6CF518005F6EDE /* Info.plist */,
+			);
+			path = arryPotter;
+			sourceTree = "<group>";
+		};
+		BC27315B1C6CF518005F6EDE /* arryPotterTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC27315C1C6CF518005F6EDE /* arryPotterTests.swift */,
+				BC27315E1C6CF518005F6EDE /* Info.plist */,
+			);
+			path = arryPotterTests;
+			sourceTree = "<group>";
+		};
+		BC2731661C6CF518005F6EDE /* arryPotterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC2731671C6CF518005F6EDE /* arryPotterUITests.swift */,
+				BC2731691C6CF518005F6EDE /* Info.plist */,
+			);
+			path = arryPotterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC2731411C6CF518005F6EDE /* arryPotter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC27316C1C6CF518005F6EDE /* Build configuration list for PBXNativeTarget "arryPotter" */;
+			buildPhases = (
+				BC27313E1C6CF518005F6EDE /* Sources */,
+				BC27313F1C6CF518005F6EDE /* Frameworks */,
+				BC2731401C6CF518005F6EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = arryPotter;
+			productName = arryPotter;
+			productReference = BC2731421C6CF518005F6EDE /* arryPotter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC2731571C6CF518005F6EDE /* arryPotterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC27316F1C6CF518005F6EDE /* Build configuration list for PBXNativeTarget "arryPotterTests" */;
+			buildPhases = (
+				BC2731541C6CF518005F6EDE /* Sources */,
+				BC2731551C6CF518005F6EDE /* Frameworks */,
+				BC2731561C6CF518005F6EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC27315A1C6CF518005F6EDE /* PBXTargetDependency */,
+			);
+			name = arryPotterTests;
+			productName = arryPotterTests;
+			productReference = BC2731581C6CF518005F6EDE /* arryPotterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC2731621C6CF518005F6EDE /* arryPotterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC2731721C6CF518005F6EDE /* Build configuration list for PBXNativeTarget "arryPotterUITests" */;
+			buildPhases = (
+				BC27315F1C6CF518005F6EDE /* Sources */,
+				BC2731601C6CF518005F6EDE /* Frameworks */,
+				BC2731611C6CF518005F6EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC2731651C6CF518005F6EDE /* PBXTargetDependency */,
+			);
+			name = arryPotterUITests;
+			productName = arryPotterUITests;
+			productReference = BC2731631C6CF518005F6EDE /* arryPotterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC27313A1C6CF518005F6EDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Kelly Linehan";
+				TargetAttributes = {
+					BC2731411C6CF518005F6EDE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					BC2731571C6CF518005F6EDE = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BC2731411C6CF518005F6EDE;
+					};
+					BC2731621C6CF518005F6EDE = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BC2731411C6CF518005F6EDE;
+					};
+				};
+			};
+			buildConfigurationList = BC27313D1C6CF518005F6EDE /* Build configuration list for PBXProject "arryPotter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC2731391C6CF518005F6EDE;
+			productRefGroup = BC2731431C6CF518005F6EDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC2731411C6CF518005F6EDE /* arryPotter */,
+				BC2731571C6CF518005F6EDE /* arryPotterTests */,
+				BC2731621C6CF518005F6EDE /* arryPotterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC2731401C6CF518005F6EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2731521C6CF518005F6EDE /* LaunchScreen.storyboard in Resources */,
+				BC27314F1C6CF518005F6EDE /* Assets.xcassets in Resources */,
+				BC27314D1C6CF518005F6EDE /* Main.storyboard in Resources */,
+				BC2731761C6CF51F005F6EDE /* harrypotter.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2731561C6CF518005F6EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2731611C6CF518005F6EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC27313E1C6CF518005F6EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC27314A1C6CF518005F6EDE /* DetailViewController.swift in Sources */,
+				BC2731481C6CF518005F6EDE /* MasterViewController.swift in Sources */,
+				BC2731461C6CF518005F6EDE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2731541C6CF518005F6EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC27315D1C6CF518005F6EDE /* arryPotterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC27315F1C6CF518005F6EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2731681C6CF518005F6EDE /* arryPotterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC27315A1C6CF518005F6EDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC2731411C6CF518005F6EDE /* arryPotter */;
+			targetProxy = BC2731591C6CF518005F6EDE /* PBXContainerItemProxy */;
+		};
+		BC2731651C6CF518005F6EDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC2731411C6CF518005F6EDE /* arryPotter */;
+			targetProxy = BC2731641C6CF518005F6EDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC27314B1C6CF518005F6EDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC27314C1C6CF518005F6EDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC2731501C6CF518005F6EDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC2731511C6CF518005F6EDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC27316A1C6CF518005F6EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC27316B1C6CF518005F6EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC27316D1C6CF518005F6EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = arryPotter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kl.arryPotter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC27316E1C6CF518005F6EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = arryPotter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kl.arryPotter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BC2731701C6CF518005F6EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = arryPotterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kl.arryPotterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/arryPotter.app/arryPotter";
+			};
+			name = Debug;
+		};
+		BC2731711C6CF518005F6EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = arryPotterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kl.arryPotterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/arryPotter.app/arryPotter";
+			};
+			name = Release;
+		};
+		BC2731731C6CF518005F6EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = arryPotterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kl.arryPotterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = arryPotter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BC2731741C6CF518005F6EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = arryPotterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kl.arryPotterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = arryPotter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC27313D1C6CF518005F6EDE /* Build configuration list for PBXProject "arryPotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC27316A1C6CF518005F6EDE /* Debug */,
+				BC27316B1C6CF518005F6EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC27316C1C6CF518005F6EDE /* Build configuration list for PBXNativeTarget "arryPotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC27316D1C6CF518005F6EDE /* Debug */,
+				BC27316E1C6CF518005F6EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC27316F1C6CF518005F6EDE /* Build configuration list for PBXNativeTarget "arryPotterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2731701C6CF518005F6EDE /* Debug */,
+				BC2731711C6CF518005F6EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC2731721C6CF518005F6EDE /* Build configuration list for PBXNativeTarget "arryPotterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2731731C6CF518005F6EDE /* Debug */,
+				BC2731741C6CF518005F6EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC27313A1C6CF518005F6EDE /* Project object */;
+}
