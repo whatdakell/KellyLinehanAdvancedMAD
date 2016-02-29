@@ -50,9 +50,9 @@
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfn-wg-GJc">
-                                    <rect key="frame" x="8" y="8" width="102" height="36"/>
+                                    <rect key="frame" x="249" y="8" width="102" height="36"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="102" id="1zz-qm-3Mf"/>
+                                        <constraint firstAttribute="width" constant="102" id="Lhi-8Y-Utl"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,9 +60,9 @@
                                 </label>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="mfn-wg-GJc" firstAttribute="leading" secondItem="an3-pg-O8U" secondAttribute="leadingMargin" id="23c-fp-C4t"/>
-                                <constraint firstItem="mfn-wg-GJc" firstAttribute="top" secondItem="an3-pg-O8U" secondAttribute="topMargin" id="Skc-Ap-ln4"/>
-                                <constraint firstAttribute="bottomMargin" secondItem="mfn-wg-GJc" secondAttribute="bottom" constant="-2" id="gxj-G2-Bud"/>
+                                <constraint firstItem="mfn-wg-GJc" firstAttribute="top" secondItem="an3-pg-O8U" secondAttribute="topMargin" id="O7u-Da-kFR"/>
+                                <constraint firstItem="mfn-wg-GJc" firstAttribute="centerX" secondItem="an3-pg-O8U" secondAttribute="centerX" id="fJA-qo-Vry"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="mfn-wg-GJc" secondAttribute="bottom" constant="-2" id="sFk-qh-mL3"/>
                             </constraints>
                             <connections>
                                 <outlet property="headerLabel" destination="mfn-wg-GJc" id="yeB-p5-2nv"/>
