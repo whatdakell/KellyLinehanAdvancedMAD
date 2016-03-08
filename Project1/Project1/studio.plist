@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>States</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Schedule</string>
+			<key>url</key>
+			<string>http://somelikeithotyoga.com/class-schedule/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Instructors</string>
+			<key>url</key>
+			<string>http://somelikeithotyoga.com/instructors/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>News Events</string>
+			<key>url</key>
+			<string>http://somelikeithotyoga.com/news-events/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Contact Us</string>
+			<key>url</key>
+			<string>http://somelikeithotyoga.com/contact-us/</string>
+		</dict>
+	</array>
+</dict>
+</plist>
