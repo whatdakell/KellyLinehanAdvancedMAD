@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Darlene</string>
+		<key>Hours</key>
+		<string>200 RYT</string>
+		<key>Photo</key>
+		<string>SLIH1</string>
+	</dict>
+  <dict>
+      <key>Name</key>
+      <string>Amadeo</string>
+      <key>Hours</key>
+    <string>200 RYT</string>
+    <key>Photo</key>
+    <string>SLIH2</string>
+  </dict>
+  <dict>
+      <key>Name</key>
+      <string>Kelly</string>
+      <key>Hours</key>
+    <string>300 RYT</string>
+    <key>Photo</key>
+    <string>SLIH3</string>
+  </dict>
+  <dict>
+      <key>Name</key>
+      <string>Melanie</string>
+      <key>Hours</key>
+    <string>200 RYT</string>
+    <key>Photo</key>
+    <string>SLIH4</string>
+  </dict>
+  <dict>
+      <key>Name</key>
+      <string>Rachael</string>
+      <key>Hours</key>
+    <string>200 RYT</string>
+    <key>Photo</key>
+    <string>SLIH5</string>
+  </dict>
+  <dict>
+      <key>Name</key>
+      <string>Jenny</string>
+      <key>Hours</key>
+    <string>200 RYT</string>
+    <key>Photo</key>
+    <string>SLIH6</string>
+  </dict>
+  <dict>
+      <key>Name</key>
+      <string>Corinne</string>
+      <key>Hours</key>
+    <string>"Matthijs, stop going on about architecture, we're trying to eat!"</string>
+    <key>Photo</key>
+    <string>SLIH7</string>
+  </dict>
+  <dict>
+      <key>Name</key>
+      <string>Gabe</string>
+      <key>Hours</key>
+    <string>500 RYT</string>
+    <key>Photo</key>
+    <string>SLIH8</string>
+  </dict>
+</array>
+</plist>
