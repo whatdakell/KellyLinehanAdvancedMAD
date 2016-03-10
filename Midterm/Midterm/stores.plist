@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>stores</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Alfalfas</string>
+			<key>url</key>
+			<string>https://www.costco.com</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Costco</string>
+			<key>url</key>
+			<string>http://www.costco.com</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>King Soopers</string>
+			<key>url</key>
+			<string>https://www.kingsoopers.com</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kmart</string>
+			<key>url</key>
+			<string>https://www.kmart.com</string>
+		</dict>
+	</array>
+</dict>
+</plist>
