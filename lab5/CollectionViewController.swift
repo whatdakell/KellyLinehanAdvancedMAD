@@ -86,13 +86,14 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         // Configure the cell
         let image = UIImage(named: myImages[indexPath.row])
+        print(indexPath.row)
         cell.imageView.image = image
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let image = UIImage(named: myImages[indexPath.row])
-        let newSize:CGSize = CGSize(width: (image?.size.width)!/8, height: (image?.size.height)!/8)
+        let newSize:CGSize = CGSize(width: (image?.size.width)!/2, height: (image?.size.height)!/2)
         let rect = CGRectMake(0, 0, newSize.width, newSize.height)
         UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
         image?.drawInRect(rect)

@@ -21,15 +21,21 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="w2K-SL-433" customClass="CollectionViewCell" customModule="lab5" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="114" width="205" height="305"/>
+                                <rect key="frame" x="48" y="114" width="505" height="505"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="205" height="305"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="505" height="505"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jbn-vj-42Y">
-                                            <rect key="frame" x="8" y="5" width="200" height="300"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jbn-vj-42Y">
+                                            <rect key="frame" x="8" y="5" width="500" height="300"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HELLO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxD-Vk-DOn">
+                                            <rect key="frame" x="220" y="384" width="53" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -39,7 +45,7 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="jbn-vj-42Y" secondAttribute="trailing" constant="-11" id="fX5-PY-3bp"/>
                                     <constraint firstAttribute="bottom" secondItem="jbn-vj-42Y" secondAttribute="bottom" id="nj6-6c-9mO"/>
                                 </constraints>
-                                <size key="customSize" width="205" height="305"/>
+                                <size key="customSize" width="505" height="505"/>
                                 <connections>
                                     <outlet property="imageView" destination="jbn-vj-42Y" id="3CO-VB-fVX"/>
                                     <segue destination="1pr-Se-IKw" kind="show" identifier="showDetail" id="msr-s5-n5D"/>
