@@ -18,6 +18,7 @@ class MasterViewController: UITableViewController {
     
     
     override func viewDidLoad() {
+        
     
         super.viewDidLoad()
         let path = NSBundle.mainBundle().pathForResource("studio", ofType: "plist")

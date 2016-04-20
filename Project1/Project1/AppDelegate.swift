@@ -12,8 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate{
 
     var window: UIWindow?
+     var viewController: UIViewController!
+//    var navBar: UINavigationController
+//    var src: SourceCredentials?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+//        var src: SourceCredentials = SourceCredentials.sharedInstance()
+//        src.SourceName = "SomeLikeItHotYogaandBoutique"
+//        // Your API source names goes here
+//        src.Password = "whpjUjEbthWaNvvcSBQ2vYJ14+M="
+//        // The source password goes here
+//        src.SiteID = "41923"
+
+
         if let splitViewController = self.window!.rootViewController as? UISplitViewController {
             let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
             navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()

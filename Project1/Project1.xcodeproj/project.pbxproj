@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC2747B51CC3C57400780C6A /* newsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2747B41CC3C57300780C6A /* newsTableViewCell.swift */; };
+		BC2747BD1CC3C5E000780C6A /* newsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2747BC1CC3C5E000780C6A /* newsTableViewController.swift */; };
 		BC34B5541C8ED39200F77FB7 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34B5531C8ED39200F77FB7 /* InfoTableViewCell.swift */; };
 		BC34B5561C8EE3A800F77FB7 /* InstructorsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34B5551C8EE3A800F77FB7 /* InstructorsCollectionViewController.swift */; };
 		BC34B5581C8EE67E00F77FB7 /* InstructorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34B5571C8EE67E00F77FB7 /* InstructorCollectionViewCell.swift */; };
@@ -115,6 +117,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC2747B41CC3C57300780C6A /* newsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newsTableViewCell.swift; sourceTree = "<group>"; };
+		BC2747BC1CC3C5E000780C6A /* newsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newsTableViewController.swift; sourceTree = "<group>"; };
 		BC34B5531C8ED39200F77FB7 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		BC34B5551C8EE3A800F77FB7 /* InstructorsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = InstructorsCollectionViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		BC34B5571C8EE67E00F77FB7 /* InstructorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = InstructorCollectionViewCell.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -195,8 +199,10 @@
 				BC7055A11C85F993002D0BC3 /* MasterViewController.swift */,
 				BC7055A31C85F993002D0BC3 /* DetailViewController.swift */,
 				BC7055A51C85F993002D0BC3 /* Main.storyboard */,
+				BC2747BC1CC3C5E000780C6A /* newsTableViewController.swift */,
 				BC34B55E1C8FAF8E00F77FB7 /* contactViewController.swift */,
 				BC34B5661C8FAFD400F77FB7 /* newsViewController.swift */,
+				BC2747B41CC3C57300780C6A /* newsTableViewCell.swift */,
 				BC7055A81C85F993002D0BC3 /* Assets.xcassets */,
 				BC7055AA1C85F993002D0BC3 /* LaunchScreen.storyboard */,
 				BC7055AD1C85F993002D0BC3 /* Info.plist */,
@@ -434,10 +440,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2747BD1CC3C5E000780C6A /* newsTableViewController.swift in Sources */,
 				BC34B5541C8ED39200F77FB7 /* InfoTableViewCell.swift in Sources */,
 				BC34B55F1C8FAF8E00F77FB7 /* contactViewController.swift in Sources */,
 				BC34B5671C8FAFD400F77FB7 /* newsViewController.swift in Sources */,
 				BC34B5581C8EE67E00F77FB7 /* InstructorCollectionViewCell.swift in Sources */,
+				BC2747B51CC3C57400780C6A /* newsTableViewCell.swift in Sources */,
 				BC34B5561C8EE3A800F77FB7 /* InstructorsCollectionViewController.swift in Sources */,
 				BC7055A41C85F993002D0BC3 /* DetailViewController.swift in Sources */,
 				BC7055A21C85F993002D0BC3 /* MasterViewController.swift in Sources */,

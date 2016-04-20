@@ -1,19 +1,22 @@
 //
-//  newsViewController.swift
+//  newsTableViewController.swift
 //  Project1
 //
-//  Created by Kelly Linehan on 3/8/16.
+//  Created by Kelly Linehan on 4/17/16.
 //  Copyright © 2016 Kelly Linehan. All rights reserved.
 //
 
 import UIKit
 
-class newsViewController:  UITableViewController {
+class newsTableViewController: UITableViewController {
     
 //    var detailViewController: DetailViewController? = nil
     var objects = [[String:String]]()
-    let cellSpacingHeight: CGFloat = 50
+//    
+    @IBOutlet weak var titleText: UILabel!
+    @IBOutlet weak var detialTextLabel: UILabel!
     
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         loadjson()
@@ -80,20 +83,20 @@ class newsViewController:  UITableViewController {
     
     // MARK: - Segues
     
-    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    //        if segue.identifier == "showDetail" {
-    //            if let indexPath = self.tableView.indexPathForSelectedRow {
-    //                let petition = objects[indexPath.row]
-    //                let title = petition["title"]
-    //                let url = petition["url"]
-    //                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-    //                controller.detailItem = url
-    //                controller.title = title
-    //                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-    //                controller.navigationItem.leftItemsSupplementBackButton = true
-    //            }
-    //        }
-    // }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "showDetail" {
+//            if let indexPath = self.tableView.indexPathForSelectedRow {
+//                let petition = objects[indexPath.row]
+//                let title = petition["title"]
+//                let url = petition["url"]
+//                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
+//                controller.detailItem = url
+//                controller.title = title
+//                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+//                controller.navigationItem.leftItemsSupplementBackButton = true
+//            }
+//        }
+   // }
     
     // MARK: - Table View
     
@@ -112,9 +115,9 @@ class newsViewController:  UITableViewController {
         cell.newtitle!.text = object["content"]
         cell.sub!.text = object["title"]
         
-        //        if object["id"] != nil {
-        //            cell.detailTextLabel!.text = object["id"]! + " id"
-        //        }
+//        if object["id"] != nil {
+//            cell.detailTextLabel!.text = object["id"]! + " id"
+//        }
         return cell
     }
 }

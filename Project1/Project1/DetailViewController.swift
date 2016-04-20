@@ -11,7 +11,8 @@ import UIKit
 class DetailViewController: UIViewController,UITableViewDataSource, UITableViewDelegate{
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
-    
+//     var mutableData:NSMutableData  = NSMutableData.alloc()
+
     
     @IBOutlet weak var webview: UIWebView!
     let cellSpacingHeight: CGFloat = 50
@@ -34,12 +35,9 @@ class DetailViewController: UIViewController,UITableViewDataSource, UITableViewD
     }
 
     */
-
-
-
-
     // MARK: - UITableViewDataSource
 
+   
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
         return 3
@@ -150,6 +148,7 @@ class DetailViewController: UIViewController,UITableViewDataSource, UITableViewD
     }
     */
     
+
     
     
 }
