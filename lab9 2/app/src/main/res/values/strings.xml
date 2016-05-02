@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Desserts</string>
+    <string name="bulbs">Types</string>
+    <string-array name="bulb_types">
+        <item>Cakes</item>
+        <item>Cookies</item>
+        <item>Pies</item>
+    </string-array>
+    <string name="create_order">Order</string>
+    <string name="title_activity_order">Create Order</string>
+</resources>

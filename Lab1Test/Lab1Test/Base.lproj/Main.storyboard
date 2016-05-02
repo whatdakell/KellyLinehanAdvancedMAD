@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab1Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukL-AR-SEJ">
+                                <rect key="frame" x="0.0" y="65" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="YfF-nG-YIg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3D6-wb-vSx"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kV8-Tb-hTW">
+                                <rect key="frame" x="20" y="373" width="560" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="tSL-W8-23P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a5X-dz-xDF">
+                                <rect key="frame" x="180" y="472" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="9F4-VB-0za"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bzg-rw-Ryy">
+                                <rect key="frame" x="132" y="65" width="358" height="21"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M6W-SL-ocQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mood               Course              Type   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCj-Yx-hFh">
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="358" id="6Mb-Rp-9BQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bzg-rw-Ryy" firstAttribute="top" secondItem="ukL-AR-SEJ" secondAttribute="top" id="0Bs-It-LE1"/>
+                            <constraint firstItem="kV8-Tb-hTW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0Kj-Ut-wbw"/>
+                            <constraint firstAttribute="trailing" secondItem="ukL-AR-SEJ" secondAttribute="trailing" id="0L6-cS-oC9"/>
+                            <constraint firstItem="ukL-AR-SEJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="3b2-2y-aCG"/>
+                            <constraint firstItem="a5X-dz-xDF" firstAttribute="top" secondItem="kV8-Tb-hTW" secondAttribute="bottom" constant="51" id="4KO-MG-qTK"/>
+                            <constraint firstItem="kV8-Tb-hTW" firstAttribute="centerX" secondItem="a5X-dz-xDF" secondAttribute="centerX" id="CCa-ow-X7b"/>
+                            <constraint firstItem="kV8-Tb-hTW" firstAttribute="top" secondItem="ukL-AR-SEJ" secondAttribute="bottom" constant="92" id="EPQ-wn-nk7"/>
+                            <constraint firstItem="a5X-dz-xDF" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="MtN-y1-aZu"/>
+                            <constraint firstItem="Bzg-rw-Ryy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="11" id="YjL-jC-Vct"/>
+                            <constraint firstItem="ukL-AR-SEJ" firstAttribute="centerX" secondItem="kV8-Tb-hTW" secondAttribute="centerX" id="Z9t-Bk-1uz"/>
+                            <constraint firstItem="ukL-AR-SEJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ejF-Xo-h6E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foodmood" destination="ukL-AR-SEJ" id="VpV-kQ-FLK"/>
+                        <outlet property="label" destination="kV8-Tb-hTW" id="JYg-mW-sob"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="330"/>
+        </scene>
+    </scenes>
+</document>
