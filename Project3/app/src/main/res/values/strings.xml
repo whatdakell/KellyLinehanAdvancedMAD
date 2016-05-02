@@ -1,11 +1,14 @@
 <resources>
     <string name="app_name">Band Names</string>
-    <string name="Bands">Bulbs</string>
+    <string name="Bands">Bands</string>
     <string-array name="Band_types">
         <item>Rock</item>
         <item>Pop</item>
-        <item>HipHop/Reggea/Electronic</item>
         <item>Classic Rock</item>
+        <item>HipHop</item>
+        <item>Electronic</item>
+        <item>Reggae</item>
+
     </string-array>
     <string name="create_order">Listen</string>
     <string name="title_activity_order">Find Song</string>

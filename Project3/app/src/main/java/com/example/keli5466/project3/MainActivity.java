@@ -10,14 +10,38 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.view.LayoutInflater;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.R.string;
+
 
 
 public class MainActivity extends Activity {
+    ListView list;
+    Integer[] imageId = {
+            R.drawable.electric,
+            R.drawable.popmic,
+            R.drawable.classic,
+            R.drawable.boomb,
+            R.drawable.eletric,
+            R.drawable.regg,
+
+
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        String[] web = getResources().getStringArray(R.array.Band_types);
+//        Resources res = getResources();
+//        String plantArray=getResources().obtainTypedArray(R.array.Band_types);
+//        String[] bnames = R.getStringArray(R.array.Band_types);
         setContentView(R.layout.activity_main);
+        costumeList adapter = new
+                costumeList(MainActivity.this, web, imageId);
+        ListView list=(ListView)findViewById(R.id.list);
+        list.setAdapter(adapter);
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> listView, View view, int postition, long id){
                 String bandtype = (String) listView.getItemAtPosition(postition);
@@ -26,8 +50,8 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         };
-        ListView listView = (ListView) findViewById(R.id.listView);
-        listView.setOnItemClickListener(itemClickListener);
+//        ListView listView = (ListView) findViewById(R.id.list);
+        list.setOnItemClickListener(itemClickListener);
     }
 
     @Override

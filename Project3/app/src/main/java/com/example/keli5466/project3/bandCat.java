@@ -30,14 +30,20 @@ private String bandtype;
             case "Pop":
                 listAdapter = new ArrayAdapter<Bands>(this, android.R.layout.simple_list_item_1, Bands.pop);
                 break;
-            case "HipHop/Reggea/Electronic":
-                listAdapter = new ArrayAdapter<Bands>(this, android.R.layout.simple_list_item_1, Bands.hiphop);
-                break;
             case "Classic Rock":
                 listAdapter = new ArrayAdapter<Bands>(this, android.R.layout.simple_list_item_1, Bands.classic);
                 break;
+            case "HipHop":
+                listAdapter = new ArrayAdapter<Bands>(this, android.R.layout.simple_list_item_1, Bands.hiphop);
+                break;
+            case "Electronic":
+                listAdapter = new ArrayAdapter<Bands>(this, android.R.layout.simple_list_item_1, Bands.electronic);
+                break;
+            case "Reggae":
+                listAdapter = new ArrayAdapter<Bands>(this, android.R.layout.simple_list_item_1, Bands.reggae);
+                break;
             default:
-                listAdapter = new ArrayAdapter<Bands>(this, android.R.layout.simple_list_item_1, Bands.rock);
+                listAdapter = new ArrayAdapter<Bands>(this, android.R.layout.simple_list_item_1, Bands.reggae);
         }
         listBands.setAdapter(listAdapter);
         }

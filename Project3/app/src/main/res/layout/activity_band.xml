@@ -19,7 +19,8 @@
         android:gravity="top"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#162b48" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -34,13 +35,22 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/band_des"
         android:textIsSelectable="false"
-        android:textSize="18dp"
+        android:textSize="17dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:autoText="true"
         android:paddingTop="10dp"
         android:layout_marginTop="10dp"
-        android:background="#d8d4d4" />
-        />
+        android:background="#ffffff"
+        android:textColor="#162b48" />
+
+    <!--<Button-->
+        <!--style="?android:attr/buttonStyleSmall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="New Button"-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_gravity="center_horizontal" />-->
+    <!--/>-->
 </LinearLayout>

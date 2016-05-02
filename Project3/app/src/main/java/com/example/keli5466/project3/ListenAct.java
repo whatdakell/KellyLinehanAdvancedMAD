@@ -15,7 +15,7 @@ public class ListenAct extends Activity {
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         WebView browser = (WebView) findViewById(R.id.webView);
-        browser.loadUrl("https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ");
+        browser.loadUrl("https://soundcloud.com/search");
     }
 
 }

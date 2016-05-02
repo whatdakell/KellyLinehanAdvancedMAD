@@ -16,20 +16,23 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="How Bands Got their Names"
         android:id="@+id/textView"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#162b48" />
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="180dp"
         android:id="@+id/imageView"
-        android:src="@drawable/home"
+        android:src="@drawable/band1"
         android:contentDescription="@string/Bands" />
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:entries="@array/Band_types"/>
-
+        android:id="@+id/list"
+        android:entries="@array/Band_types"
+        android:nestedScrollingEnabled="true" />
 
 </LinearLayout>

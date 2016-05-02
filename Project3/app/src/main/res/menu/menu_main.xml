@@ -3,6 +3,7 @@
     <item
         android:id="@+id/create_order"
         android:title="@string/create_order"
-        android:icon="@drawable/icon"
+        android:logo="@drawable/soundcloud1"
+        android:icon="@drawable/sound"
         android:showAsAction="ifRoom" />
 </menu>

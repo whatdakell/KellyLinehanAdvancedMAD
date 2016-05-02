@@ -9,20 +9,27 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Button;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+
 
 public class BandAct extends Activity {
-
+    private String url;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_band);
 
         //get bulb data from the intent
-        int bulbnum = (Integer) getIntent().getExtras().get("bandid");
+        final int bulbnum = (Integer) getIntent().getExtras().get("bandid");
         String type = (String) getIntent().getExtras().get("bandtype");
         String Dtype = (String) getIntent().getExtras().get("bandDes");
+//        String bURL = (String) getIntent().getExtras().get("bandURL");
 
-        Bands bands;
+        final Bands bands;
 
         switch (type) {
             case "Rock":
@@ -31,14 +38,20 @@ public class BandAct extends Activity {
             case "Pop":
                 bands = Bands.pop[bulbnum];
                 break;
-            case "HipHop/Reggea/Electronic":
-                bands = Bands.hiphop[bulbnum];
-                break;
             case "Classic Rock":
                 bands = Bands.classic[bulbnum];
                 break;
+            case "HipHop":
+                bands = Bands.hiphop[bulbnum];
+                break;
+            case "Electronic":
+                bands = Bands.electronic[bulbnum];
+                break;
+            case "Reggae":
+                bands = Bands.reggae[bulbnum];
+                break;
             default:
-                bands = Bands.rock[bulbnum];
+                bands = Bands.reggae[bulbnum];
         }
 
 
@@ -52,7 +65,22 @@ public class BandAct extends Activity {
 
         TextView BandDes = (TextView) findViewById(R.id.band_des);
         BandDes.setText(bands.getDes());
+//
+//        Button btn1 = (Button)findViewById(R.id.button);
+//        final String url = bands.getURL();
+//
+//
+//
+//        btn1.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                Intent intent=new Intent(BandAct.this,Wiki.class);
+//                intent.putExtra("bandurl", url);
+//                startActivity(intent);
+//            }
+//        });
     }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         //inflate menu to add items to the action bar
